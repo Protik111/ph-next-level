@@ -1,0 +1,26 @@
+// Example data
+{
+      "title": "Book 1",
+      "author": ["Author 1", "Author 2"],
+      "genre": "Mystery",
+      "publicationYear": 2020,
+      "publisher": { "name": "Publisher A", "location": "City A" },
+      "reviews": [
+         { "user": "User 1", "comment": "Great book!" },
+         { "user": "User 2", "comment": "Interesting plot" }
+      ],
+      "rating": 4.5,
+      "price": "90"
+   }
+
+
+
+Task 1: Create a MongoDB model with an interface and schema for a "Book" collection that stores fields like title, author, genre, publication year, rating, price, and nested fields like "publisher" and "reviews". All the fields would be required.
+
+Task 2: Implement a MongoDB query to find all books in the "Books" collection with a specific genre, such as "Fantasy"
+
+Task 3: Implement a MongoDB query to find books in the "Books" collection with a specific genre “Sci-Fi” and published by “Roli Books”.
+
+Task 4: Create a static method method within the "Book" model or write a function using query to retrieve books from the "Books" collection that have a rating equal to or higher than 4. These books will be categorized as featured books. Additionally, introduce a new field named "featured" to the featured book objects. The value of this field should be "Popular" if the book's rating is greater than or equal to 4. For books with a rating exceeding 4.5, the value should be set to "BestSeller".
+
+Task 5: In the existing book data, some books have their prices stored as strings instead of integers. To ensure consistent data representation, you are required to update the prices of all books from string format to integer format using a MongoDB update query. However, to limit the scope of the update and ensure data accuracy, the prices should be updated only for books published after 2020.
