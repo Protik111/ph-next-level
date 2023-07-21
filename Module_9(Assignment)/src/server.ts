@@ -1,13 +1,13 @@
 import mongoose from "mongoose";
 import express from 'express';
-const app = express();
+import app from "./app";
 
 const port: number = 5000;
 
 //database connection
 async function bootstrap() {
     try {
-        await mongoose.connect("mongodb://127.0.0.1:27017/practice-mongoose");
+        await mongoose.connect("mongodb://127.0.0.1:27017/assignment-mongoose");
         console.log(`Database connection successful`);
 
         app.listen(port, () => {

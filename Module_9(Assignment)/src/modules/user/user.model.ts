@@ -66,6 +66,7 @@ userSchema.static("getAdminUsers", async function getAdminUsers() {
   return admins;
 });
 
+// instance methods --> instance er methods
 userSchema.method("fullName", function fullName() {
   return this.name.firstName + " " + this.name.lastName;
 });
@@ -73,5 +74,3 @@ userSchema.method("fullName", function fullName() {
 const User = model<IUser, UserModel>("User", userSchema);
 
 export default User;
-
-// instance methods --> instance er methods
