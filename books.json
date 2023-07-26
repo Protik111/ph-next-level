@@ -1,0 +1,133 @@
+[
+    {
+      "title": "Book 1",
+      "author": ["Author 1", "Author 2"],
+      "genre": "Mystery",
+      "publicationYear": 2020,
+      "publisher": { "name": "Publisher A", "location": "City A" },
+      "reviews": [
+        { "user": "User 1", "comment": "Great book!" },
+        { "user": "User 2", "comment": "Interesting plot" }
+      ],
+      "rating": 4.5,
+      "price": "90"
+    },
+    {
+      "title": "Book 2",
+      "author": ["Author 3", "Author 4"],
+      "genre": "Fantasy",
+      "publicationYear": 2018,
+      "publisher": { "name": "Publisher B", "location": "City B" },
+      "reviews": [
+        { "user": "User 3", "comment": "Captivating read!" },
+        { "user": "User 4", "comment": "Magical world-building" }
+      ],
+      "rating": 4.8,
+      "price": "75"
+    },
+    {
+      "title": "Book 3",
+      "author": ["Author 5", "Author 6"],
+      "genre": "Science Fiction",
+      "publicationYear": 2019,
+      "publisher": { "name": "Publisher C", "location": "City C" },
+      "reviews": [
+        { "user": "User 5", "comment": "Mind-blowing concepts!" },
+        { "user": "User 6", "comment": "Fascinating characters" }
+      ],
+      "rating": 4.6,
+      "price": "85"
+    },
+    {
+      "title": "Book 4",
+      "author": ["Author 7"],
+      "genre": "Thriller",
+      "publicationYear": 2021,
+      "publisher": { "name": "Publisher D", "location": "City D" },
+      "reviews": [
+        { "user": "User 7", "comment": "Kept me on edge!" },
+        { "user": "User 8", "comment": "Twists and turns" }
+      ],
+      "rating": 4.3,
+      "price": "95"
+    },
+    {
+      "title": "Book 5",
+      "author": ["Author 9", "Author 10"],
+      "genre": "Romance",
+      "publicationYear": 2017,
+      "publisher": { "name": "Publisher E", "location": "City E" },
+      "reviews": [
+        { "user": "User 9", "comment": "Heartwarming love story!" },
+        { "user": "User 10", "comment": "Tears of joy" }
+      ],
+      "rating": 4.7,
+      "price": "80"
+    },
+    {
+      "title": "Book 6",
+      "author": ["Author 11"],
+      "genre": "Historical Fiction",
+      "publicationYear": 2022,
+      "publisher": { "name": "Publisher F", "location": "City F" },
+      "reviews": [
+        { "user": "User 11", "comment": "Richly researched!" },
+        { "user": "User 12", "comment": "Immersive setting" }
+      ],
+      "rating": 4.4,
+      "price": "100"
+    },
+    {
+      "title": "Book 7",
+      "author": ["Author 13"],
+      "genre": "Horror",
+      "publicationYear": 2016,
+      "publisher": { "name": "Publisher G", "location": "City G" },
+      "reviews": [
+        { "user": "User 13", "comment": "Spine-chilling!" },
+        { "user": "User 14", "comment": "Nightmare-inducing" }
+      ],
+      "rating": 4.9,
+      "price": "70"
+    },
+    {
+      "title": "Book 8",
+      "author": ["Author 15", "Author 16"],
+      "genre": "Young Adult",
+      "publicationYear": 2023,
+      "publisher": { "name": "Publisher H", "location": "City H" },
+      "reviews": [
+        { "user": "User 15", "comment": "Perfect for teens!" },
+        { "user": "User 16", "comment": "Relatable characters" }
+      ],
+      "rating": 4.2,
+      "price": "110"
+    },
+    {
+      "title": "Book 9",
+      "author": ["Author 17"],
+      "genre": "Drama",
+      "publicationYear": 2015,
+      "publisher": { "name": "Publisher I", "location": "City I" },
+      "reviews": [
+        { "user": "User 17", "comment": "Emotionally charged" },
+        { "user": "User 18", "comment": "Thought-provoking" }
+      ],
+      "rating": 4.1,
+      "price": "120"
+    },
+    {
+      "title": "Book 10",
+      "author": ["Author 18", "Author 19"],
+      "genre": "Comedy",
+      "publicationYear": 2024,
+      "publisher": { "name": "Publisher J", "location": "City J" },
+      "reviews": [
+        { "user": "User 19", "comment": "Laugh-out-loud funny!" },
+        { "user": "User 20", "comment": "Hilarious and witty" }
+      ],
+      "rating": 4.6,
+      "price": "95"
+    }
+  ]
+  

@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { getAllBooks, getBooksByPublisher } from "./book.service";
+import { getAllBooks, getBooksByPublisher, getFeaturedBooks } from "./book.service";
 
 export const findBooks = async (
     req: Request,
@@ -23,5 +23,17 @@ export const findBooksByPublisher = async (
     res.status(200).json({
         success: true,
         data: books
+    })
+}
+
+export const featuredBooks = async(
+    req: Request,
+    res: Response,
+    next: NextFunction
+) => {
+    const featuredBooks = await getFeaturedBooks();
+    res.status(200).json({
+        success: true,
+        data: featuredBooks
     })
 }

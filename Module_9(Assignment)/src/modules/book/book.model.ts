@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
-import { IBook } from "./book.interface";
+import { IBook, IBookModel } from "./book.interface";
 
-const bookSchema = new Schema<IBook>({
+const bookSchema = new Schema<IBook, IBookModel>({
     title: {
         type: String,
         required: true
@@ -57,6 +57,25 @@ const bookSchema = new Schema<IBook>({
 
 })
 
-const Book = model<IBook>("Book", bookSchema)
+
+bookSchema.statics.getFeaturedBooks = async function getFeaturedBooks() {
+    try {
+        const featuredBooks = await this.find({ rating: { $gte: 4 } })
+
+        for(const book of featuredBooks) {
+            if(book.rating >= 4) {
+                book.featured = "BestSeller"
+            } else {
+                book.featured = "Popular"
+            }
+        }
+
+        return featuredBooks;
+    } catch (error) {
+        throw new Error("Error retrieving featured books" + error.message)
+    }
+}
+
+const Book = model<IBook, IBookModel>("Book", bookSchema)
 
 export default Book;
