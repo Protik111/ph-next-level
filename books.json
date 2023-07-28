@@ -10,7 +10,7 @@
         { "user": "User 2", "comment": "Interesting plot" }
       ],
       "rating": 4.5,
-      "price": "90"
+      "price": 90
     },
     {
       "title": "Book 2",
@@ -23,7 +23,7 @@
         { "user": "User 4", "comment": "Magical world-building" }
       ],
       "rating": 4.8,
-      "price": "75"
+      "price": 75
     },
     {
       "title": "Book 3",
@@ -36,7 +36,7 @@
         { "user": "User 6", "comment": "Fascinating characters" }
       ],
       "rating": 4.6,
-      "price": "85"
+      "price": 85
     },
     {
       "title": "Book 4",
@@ -62,7 +62,7 @@
         { "user": "User 10", "comment": "Tears of joy" }
       ],
       "rating": 4.7,
-      "price": "80"
+      "price": 80
     },
     {
       "title": "Book 6",
@@ -75,7 +75,7 @@
         { "user": "User 12", "comment": "Immersive setting" }
       ],
       "rating": 4.4,
-      "price": "100"
+      "price": 100
     },
     {
       "title": "Book 7",

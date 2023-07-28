@@ -1,5 +1,5 @@
 import { NextFunction, Request, Response } from "express";
-import { getAllBooks, getBooksByPublisher, getFeaturedBooks } from "./book.service";
+import { getAllBooks, getBooksByPublisher, getFeaturedBooks, updateByYear } from "./book.service";
 
 export const findBooks = async (
     req: Request,
@@ -32,6 +32,18 @@ export const featuredBooks = async(
     next: NextFunction
 ) => {
     const featuredBooks = await getFeaturedBooks();
+    res.status(200).json({
+        success: true,
+        data: featuredBooks
+    })
+}
+
+export const booksUpdateByYear = async(
+    req: Request,
+    res: Response,
+    next: NextFunction
+) => {
+    const featuredBooks = await updateByYear();
     res.status(200).json({
         success: true,
         data: featuredBooks

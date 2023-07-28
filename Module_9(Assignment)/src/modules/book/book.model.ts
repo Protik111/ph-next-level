@@ -62,12 +62,20 @@ bookSchema.statics.getFeaturedBooks = async function getFeaturedBooks() {
     try {
         const featuredBooks = await this.find({ rating: { $gte: 4 } })
 
-        for(const book of featuredBooks) {
-            if(book.rating >= 4) {
-                book.featured = "BestSeller"
-            } else {
-                book.featured = "Popular"
-            }
+        // for (const book of featuredBooks) {
+        //     if (book.rating >= 4) {
+        //         book.featured = "BestSeller";
+        //     } else {
+        //         book.featured = "Popular";
+
+        //     }
+        //     await book.save()
+        // }
+
+        // Update the 'featured' property for each book
+        for (const book of featuredBooks) {
+            book.featured = book.rating >= 4 ? "BestSeller" : "Popular";
+            await book.save();
         }
 
         return featuredBooks;
@@ -76,6 +84,22 @@ bookSchema.statics.getFeaturedBooks = async function getFeaturedBooks() {
     }
 }
 
+// export const getFeaturedBooks = async (): Promise<IBook[]> => {
+//     try {
+//         // Find the featured books with a rating >= 4
+//         const featuredBooks = await Book.find({ rating: { $gte: 4 } });
+
+//         // Update the 'featured' property for each book
+//         for (const book of featuredBooks) {
+//             book.featured = book.rating >= 4 ? "BestSeller" : "Popular";
+//             await book.save();
+//         }
+
+//         return featuredBooks;
+//     } catch (error) {
+//         throw new Error("Failed to get books");
+//     }
+// };
 const Book = model<IBook, IBookModel>("Book", bookSchema)
 
 export default Book;

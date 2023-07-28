@@ -16,7 +16,7 @@ export interface IBook extends Document{
     "publisher": Publisher
     "reviews": Review[]
     "rating": number,
-    "price": String
+    "price": string
     featured?: 'Popular' | 'BestSeller';
 }
 
